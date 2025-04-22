@@ -4,13 +4,14 @@ import ThemedHeader from "./ThemedHeader";
 import ThemedBox from "./ThemedBox";
 import ThemedButton from "./ThemedButton";
 import { useContext } from "react";
+import ThemedContainer from "./ThemedContainer";
 
 function App() {
   
 
   return (
     <ThemeProvider>
-      <div style={{ fontFamily: 'Arial, sans-serif', padding: '20px'}}>
+      <ThemedContainer>
         <ThemedHeader />
         <ThemedBox />
         <ThemedButton />
@@ -18,7 +19,7 @@ function App() {
           <h3>Nested Components</h3>
           <ThemedBox />
         </div>
-      </div>
+      </ThemedContainer>
     </ThemeProvider>
   );
 }
